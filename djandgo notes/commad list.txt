@@ -1,0 +1,24 @@
+ pthon -m venv env
+   3 python -m venv env
+   4 cd scripts
+   5 cd env
+   6 cd scripts
+   7 ./activate
+   8 cd..
+   9 cd..
+  10 pip install django
+  11 django-admin startproject project
+  12 cd project
+  13 py manage.py startapp app
+  14 py manage.py makemigrations
+  15 py manage.py makemigrations
+  16 py manage.py migrate
+  17 py manage.py createsuperuser
+  18 py manage.py runserver
+  19 makemigration
+  20 makemigrations
+  21 makemigrations
+  22 py manage.py makemigrations
+  23 py manage.py runserver
+  24 py manage.py migrate
+  25 py manage.py runserver

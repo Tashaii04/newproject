@@ -1,0 +1,98 @@
+!! Very firstly we have to start global enivroment !!!
+
+! By writiing this -->>   pip install django!!
+
+
+
+PS C:\Users\Admin\OneDrive\Desktop\django> django-admin startproject newproject
+PS C:\Users\Admin\OneDrive\Desktop\django> cd..
+PS C:\Users\Admin\OneDrive\Desktop> cd django
+PS C:\Users\Admin\OneDrive\Desktop\django> cd newproject
+PS C:\Users\Admin\OneDrive\Desktop\django\newproject> py manage.py startapp app2
+PS C:\Users\Admin\OneDrive\Desktop\django\newproject>
+
+
+1) when we want to make new project follow this path 
+
+!!!! Then go in project's setting.py and write the name off app in intalled bar!!!!!!!!
+
+2)Then we have to go on prject urls and write these or edit this 
+
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("",include('app.urls')),
+]
+
+3)Then we have to make a urls.py file in app file  and write this
+
+from django.urls import path
+from .import views
+
+urlpatterns=[
+    path('',views.home),
+]
+
+4)then we have to go on views.py and write this 
+
+from django.shortcuts import render
+
+# Create your views here.
+
+def home(req):
+    return render(req,'app2/index.html')
+
+5) Now we have to make the folder named templates and app(write the same name as you given to the app) in the app folder.
+!!!! like you wirte name of the app is app1 so named the second folder app1 after making  templates folder!!!!
+
+6) Then make a file name index.html in app folder which look like this in templates/app  and write this in index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> This is home page
+    </h1>
+</body>
+</html>
+
+!!!Todays project !!!!! {05/08/2021}
+
+Now we have to make the folder named static and app(write the same name as you given to the app) in the app folder.
+!!!! like you wirte name of the app is app1 so named the second folder app1 after making  static folder!!!!
+
+1)Now we have to go on Bootstrap and downlad the file from downlad 
+
+2)and then unzip the file  so we get folders of CSS and JS .
+
+3)know we have to make 3 new folder in app folder (which is in static folder) where we have to named them images,js, css
+
+4)copy the 3rd number file in js(from unzip file) which is of 77 kb and paste it in to the app's js folder. name of file will be bootstrap.min.js
+
+5)then copy the  3 rd number file in css (from unzip file) which is of 153kb and paste it in to the app's css folder. name of file will be bootstrap.min.css
+
+6)And know  we have to link these files to index.html by writing this 
+<link rel="stylesheet" href="{% static 'app2/css/bootstrap.min.css'%}"
+
+7) for bootstrap we have to do this 
+<script src="{% static 'app2/js/bootstrap.bundle.min.js'%}">
+
+
+   </script>
+
+
+8)for images we have to do this 
+
+<img src="{% static 'app2/images/ty.jpg'%}">
+      <img src="{% static 'app2/images/uf.jpg'%}">
+
+
+
+

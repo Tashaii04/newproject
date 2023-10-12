@@ -1,0 +1,19 @@
+PS C:\Users\Admin\OneDrive\Desktop\django> python -m venv env
+PS C:\Users\Admin\OneDrive\Desktop\django> cd env
+PS C:\Users\Admin\OneDrive\Desktop\django\env> cd scripts
+PS C:\Users\Admin\OneDrive\Desktop\django\env\scripts> ./activate
+(env) PS C:\Users\Admin\OneDrive\Desktop\django\env\scripts> cd..
+(env) PS C:\Users\Admin\OneDrive\Desktop\django\env> cd..
+
+  Id CommandLine
+  -- -----------
+   1 try { . "c:\Users\Admin\Downloads\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\br... 
+   2 python -m venv env
+   3 cd .\env\Scripts\
+   4 ./activate
+   5 cd ../../
+   6 pip install django
+   7 django-admin startproject project
+   8 cd .\project\
+   9 python manage.py startapp app
+  10 python manage.py runserver

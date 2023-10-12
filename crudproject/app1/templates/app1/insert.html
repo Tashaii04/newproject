@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	www.web.com</title>
+	<link rel="stylesheet" type="text/css" href="CSS/form1.css">
+</head>
+<body>
+	
+	<center><h1>fill the Form</h1></center>
+<center>
+   
+    <form action="{% url 'insert' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+ Enter name :<input type="text" name="fn"><br><br>
+ Enter last name :<input type="text" name="ln"><br><br>	
+ Enter age:<input type="text" name="ag"><br><br>
+ Enter Email:<input type="email" name="em"><br><br>	
+ Add  image:<input type="file" name="im"><br><br>
+
+    <br><br>
+ <button type="submit" class="button2"> Sign in </button>
+</form><br><br>
+	</table></center>
+</body>
+</html>

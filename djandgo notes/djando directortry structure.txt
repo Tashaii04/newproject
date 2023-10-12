@@ -1,0 +1,55 @@
+What is Framework ?
+
+List of actitvityes or set of  rules is called Framework.
+
+we get readymade codes or  module in framework.
+
+Framework help use to made our project with predefined programes.
+
+Framework is a structure that you can build software on.
+
+It serves as a foundation ,so you are not starting entirely from scratch.
+
+Framework are typically associated with a specicifc programming.
+
+Languages and are suited to different types of tasks.
+
+
+The major difffernece btw Library and Framework are 
+
+1) In framework control is in Framework's hand       1) but in libreary the control is in programers hand.
+
+MVT : model view tempalte
+
+model- models have dynamic data /Data manage or Database
+
+Templates - it have HTML files where which user can view.
+
+Views - view connect models and templates and it has function based and class based  - it is also called logic unit.
+
+<<------------------------------------------------Directory Sturcture ---------------------------------------------------------------------------->>
+
+1) create a virtual env.
+
+2)Activate -------------------------------------> pip install django.
+
+3)django-admin   ---------------------> startproject project1(project1 means you can give any name of project).
+          |                                                                                |
+          |                                                                                |                                                                              
+  Command-line utlilty                                                    |
+         |                                                                        project 1 -> Outer 
+         |                                                      {project1 -> inner/default app}      {manege.py -> base directory}
+  manage.py                                                                      |
+                                                                                            |     
+                                                                               (  pycache    )       
+                                                                                           |                                                
+                                                                                           |
+                                                                         {  __init__py} - used to make a package python package.                                                        
+                                                                             {urls.py} - it show urls files and stored urls for web and directory
+                                                                             {asgi.py} - asynchronus server gateway interface - it is  used to handle when uncontrolable event occurs on random condition (like result day on RGPV)  
+                                                                            {wsgi.py}  - wave server gateway interface -it is a interface which help to connect with server 
+                                                                           {settings.py}  - all settings will be stored in settings.py             
+                                                                                    
+
+
+

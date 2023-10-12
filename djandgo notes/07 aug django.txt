@@ -1,0 +1,28 @@
+TOPIC -- Template  cutting  date-07/08/2023
+
+!!! to do template cutting we have to right this    {% extends 'app2/index.html' %}   on the top in the page  where we have to extend the data!!!
+
+!!! The contact which we want in other page we have to right it in a block like this 
+we write this in index.html
+
+  {% block content %}
+    <h1>Home page</h1>
+    {% endblock content %}
+
+it is write to block the data in different pages
+we write this in  about 
+
+ {% block content %}
+    <h1>About page</h1>
+    {% endblock content %} 
+
+and we can include files also  by writing this 
+
+{% include 'app2/extra.html' %}
+
+and we can also change the page content by giving the different name or work 
+
+
+{% block content1 %}
+<h1>This is Unique content</h1>
+{% endblock content1 %}

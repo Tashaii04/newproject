@@ -1,0 +1,20 @@
+Models : MVT 
+ 
+Models views Templates 
+
+ urls  -> to map a function --> f1( ) -->template
+
+abc/ ------>home ------>index.html
+
+we use command for models
+
+py manage.py makemigration : schema ---> sql generate (logical hai bs physical nhi hai)
+
+py manage.py migrate : sql ---->table
+
+ 
+
+
+
+
+
